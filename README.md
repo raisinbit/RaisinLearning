@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
 ## How to use this template
@@ -25,7 +25,6 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
-=======
-# RaisinLearning
+
 Projeto de ensino hibrido
->>>>>>> origin/master
+
