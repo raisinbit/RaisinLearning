@@ -1,1 +1,37 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="mainContent">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Criar
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content id="side-menu21">
+    <ion-list id="criar-list10">
+      <ion-item color="none" menuClose="" on-click="goToCriarMLtiplaEscolha()" id="criar-list-item29">
+        Múltipla Escolha
+        <ion-icon name="radio-button-on" item-right></ion-icon>
+      </ion-item>
+      <ion-item color="none" id="criar-list-item30">
+        Verdadeiro/Falso
+        <ion-note item-right></ion-note>
+        <ion-icon name="thumbs-up" item-right></ion-icon>
+      </ion-item>
+      <ion-item color="none" id="criar-list-item31">
+        Texto
+        <ion-note item-right></ion-note>
+        <ion-icon name="list-box" item-right></ion-icon>
+      </ion-item>
+      <ion-item color="none" id="criar-list-item33">
+        Publicar material
+        <ion-note item-right></ion-note>
+      </ion-item>
+      <ion-item color="none" id="criar-list-item34">
+        Questionário
+        <ion-note item-right></ion-note>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mainContent [root]="rootPage"></ion-nav>
