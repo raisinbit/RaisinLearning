@@ -6,9 +6,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ConfigurarPage } from '../pages/configurar/configurar';
 import { AjudaPage } from '../pages/ajuda/ajuda';
 import { SobrePage } from '../pages/sobre/sobre';
-
-
 import { EventosPage } from '../pages/eventos/eventos';
+
+
+import { TabsControllerPage } from '../pages/tabs-controller/tabs-controller';
 
 
 
@@ -17,7 +18,7 @@ import { EventosPage } from '../pages/eventos/eventos';
 })
 export class MyApp {
   @ViewChild(Nav) navCtrl: Nav;
-    rootPage:any = EventosPage;
+    rootPage:any = TabsControllerPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
