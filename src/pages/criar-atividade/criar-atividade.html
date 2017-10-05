@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Criar Atividade
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="bulb"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page2">
+  <div id="criarAtividade-container2">
+    <ion-list id="criarAtividade-list1">
+      <ion-item-divider color="light" id="criarAtividade-list-item-divider1">
+        Questões
+      </ion-item-divider>
+      <ion-item color="none" on-click="goToCriarMultiplaEscolha()" id="criarAtividade-list-item4">
+        <ion-icon name="list-box" item-left></ion-icon>
+        Múltipla Escolha
+      </ion-item>
+      <ion-item color="none" on-click="goToCriarVerdadeiroFalso()" id="criarAtividade-list-item5">
+        <ion-icon name="thumbs-up" item-left></ion-icon>
+        Verdadeiro/Falso
+        <ion-icon name="thumbs-down" item-right></ion-icon>
+      </ion-item>
+      <ion-item color="none" on-click="goToCriarEnquete()" id="criarAtividade-list-item7">
+        <ion-icon name="pie" item-left></ion-icon>
+        Enquete
+      </ion-item>
+    </ion-list>
+  </div>
+  <div id="criarAtividade-container9">
+    <ion-list id="criarAtividade-list2">
+      <ion-item-divider color="light" id="criarAtividade-list-item-divider2">
+        Documentos
+      </ion-item-divider>
+      <ion-item color="none" on-click="goToCriarTexto()" id="criarAtividade-list-item8">
+        <ion-icon name="paper" item-left></ion-icon>
+        Texto
+      </ion-item>
+      <ion-item color="none" on-click="goToCriarDocumento()" id="criarAtividade-list-item9">
+        <ion-icon name="document" item-left></ion-icon>
+        Documento
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

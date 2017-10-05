@@ -3,10 +3,12 @@ import { Platform, Nav } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { CriarMLtiplaEscolhaPage } from '../pages/criar-mltipla-escolha/criar-mltipla-escolha';
+import { ConfigurarPage } from '../pages/configurar/configurar';
+import { AjudaPage } from '../pages/ajuda/ajuda';
+import { SobrePage } from '../pages/sobre/sobre';
 
 
-import { TabsControllerPage } from '../pages/tabs-controller/tabs-controller';
+import { EventosPage } from '../pages/eventos/eventos';
 
 
 
@@ -15,7 +17,7 @@ import { TabsControllerPage } from '../pages/tabs-controller/tabs-controller';
 })
 export class MyApp {
   @ViewChild(Nav) navCtrl: Nav;
-    rootPage:any = TabsControllerPage;
+    rootPage:any = EventosPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
@@ -25,8 +27,17 @@ export class MyApp {
       splashScreen.hide();
     });
   }
-  goToCriarMLtiplaEscolha(params){
+  goToConfigurar(params){
     if (!params) params = {};
-    this.navCtrl.setRoot(CriarMLtiplaEscolhaPage);
+    this.navCtrl.setRoot(ConfigurarPage);
+  }goToAjuda(params){
+    if (!params) params = {};
+    this.navCtrl.setRoot(AjudaPage);
+  }goToSobre(params){
+    if (!params) params = {};
+    this.navCtrl.setRoot(SobrePage);
+  }goToEventos(params){
+    if (!params) params = {};
+    this.navCtrl.setRoot(EventosPage);
   }
 }

@@ -2,33 +2,45 @@
   <ion-header>
     <ion-toolbar>
       <ion-title>
-        Criar
+        Menu
       </ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-content id="side-menu21">
-    <ion-list id="criar-list10">
-      <ion-item color="none" menuClose="" on-click="goToCriarMLtiplaEscolha()" id="criar-list-item29">
-        Múltipla Escolha
-        <ion-icon name="radio-button-on" item-right></ion-icon>
+    <ion-list id="menu-list9">
+      <ion-item color="balanced" menuClose="" on-click="goToEventos()" id="menu-list-item56">
+        <ion-icon name="home" item-left></ion-icon>
+        Início
       </ion-item>
-      <ion-item color="none" id="criar-list-item30">
-        Verdadeiro/Falso
-        <ion-note item-right></ion-note>
-        <ion-icon name="thumbs-up" item-right></ion-icon>
+      <ion-item-divider color="light" id="menu-list-item-divider4">
+        Assistência
+      </ion-item-divider>
+      <ion-item color="none" menuClose="" on-click="goToConfigurar()" id="menu-list-item29">
+        Configurações
+        <ion-icon name="settings" item-right></ion-icon>
       </ion-item>
-      <ion-item color="none" id="criar-list-item31">
-        Texto
-        <ion-note item-right></ion-note>
-        <ion-icon name="list-box" item-right></ion-icon>
+      <ion-item color="none" menuClose="" on-click="goToAjuda()" id="menu-list-item30">
+        Ajuda
+        <ion-icon name="help-circle" item-right></ion-icon>
       </ion-item>
-      <ion-item color="none" id="criar-list-item33">
-        Publicar material
-        <ion-note item-right></ion-note>
+      <ion-item color="none" href-inappbrowser="https://eduferr.pythonanywhere.com/shibe/principal" id="menu-list-item31">
+        Versão Web
+        <ion-icon name="desktop" item-right></ion-icon>
       </ion-item>
-      <ion-item color="none" id="criar-list-item34">
-        Questionário
-        <ion-note item-right></ion-note>
+      <ion-item color="none" menuClose="" on-click="goToSobre()" id="menu-list-item40">
+        Sobre
+        <ion-icon name="information-circle" item-right></ion-icon>
+      </ion-item>
+      <ion-item-divider color="light" id="menu-list-item-divider3">
+        Pessoal
+      </ion-item-divider>
+      <ion-item color="balanced" menuClose="" on-click="goToAcesso()" id="menu-list-item16">
+        Acessar
+        <ion-icon name="log-in" item-right></ion-icon>
+      </ion-item>
+      <ion-item color="assertive" id="menu-list-item24">
+        Sair
+        <ion-icon name="log-out" item-right></ion-icon>
       </ion-item>
     </ion-list>
   </ion-content>
